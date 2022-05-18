@@ -2,7 +2,10 @@ module github.com/TykTechnologies/codecraft-day3-evilfizzbuzz
 
 go 1.17
 
-require github.com/stretchr/testify v1.7.1
+require (
+	github.com/stretchr/testify v1.7.1
+	github.com/matryer/is v1.4.0
+)
 
 require (
 	github.com/davecgh/go-spew v1.1.0 // indirect
