@@ -1,6 +1,6 @@
-package codecraft_day3_evilfizzbuzz
+package one
 
-func generateInput(min int, max int) []int {
+func GenerateInput(min int, max int) []int {
 	ints := make([]int, max-min+1)
 
 	for i := range ints {
