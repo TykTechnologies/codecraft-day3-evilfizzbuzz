@@ -1,1 +1,3 @@
-package codecraft_day3_evilfizzbuzz
+package main
+
+func main() {}
