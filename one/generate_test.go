@@ -22,4 +22,8 @@ func TestGenerateInput(t *testing.T) {
 	t.Run("Generates a list of a 0 integer", func(t *testing.T) {
 		assert.Equal(t, []int{0}, GenerateInput(0, 0))
 	})
+
+	t.Run("Doesn't generate anything for a range of 20,10", func(t *testing.T) {
+		assert.Equal(t, []int{}, GenerateInput(20, 10))
+	})
 }
