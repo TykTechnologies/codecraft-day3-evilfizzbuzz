@@ -1,4 +1,4 @@
-package replacethree
+package two
 
 import "fmt"
 
