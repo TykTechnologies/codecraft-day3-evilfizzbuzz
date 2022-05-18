@@ -18,4 +18,8 @@ func TestGenerateInput(t *testing.T) {
 
 		assert.Equal(t, tenToTwenty, GenerateInput(10, 20))
 	})
+
+	t.Run("Generates a list of a 0 integer", func(t *testing.T) {
+		assert.Equal(t, []int{0}, GenerateInput(0, 0))
+	})
 }
