@@ -1,10 +1,17 @@
 package fizzbuzz
 
-import "strconv"
+import (
+	"fmt"
+)
 
-func Replace(num int) string {
-	if num%15 == 0 {
-		return "FizzBuzz"
+func ReplaceDivisibleByThreeOrFive(input []int) []string {
+	out := make([]string, len(input))
+	for i, val := range input {
+		if val%15 == 0 {
+			out[i] = "FizzBuzz"
+			continue
+		}
+		out[i] = fmt.Sprintf("%d", val)
 	}
-	return strconv.Itoa(num)
+	return out
 }
